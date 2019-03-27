@@ -48,6 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Data.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExcelWriteReader.Workbook\ExcelWriteReader.Workbook.csproj">
+      <Project>{27789FFD-DEF4-4B08-BBD6-19F5C1F673D7}</Project>
+      <Name>ExcelWriteReader.Workbook</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

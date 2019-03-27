@@ -66,14 +66,28 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Constants\ExcelEnum.cs" />
+    <Compile Include="Exceptions\ClosedXMLReadException.cs" />
+    <Compile Include="Exceptions\ExcelReadException.cs" />
+    <Compile Include="Exceptions\InteropReadException.cs" />
+    <Compile Include="Extensions\DataTypeExtensions.cs" />
+    <Compile Include="Factory\ExcelWorkbookFactory.cs" />
+    <Compile Include="Factory\Interfaces\IExcelWorkbookFactory.cs" />
+    <Compile Include="Helpers\ArrayHelper.cs" />
+    <Compile Include="Helpers\ClosedXMLHelper.cs" />
+    <Compile Include="Helpers\Interfaces\IClosedXMLHelper.cs" />
+    <Compile Include="Helpers\Interfaces\IArrayHelper.cs" />
+    <Compile Include="Model\ExcelWorkbook.cs" />
+    <Compile Include="Model\Interfaces\IExcelWorkbook.cs" />
+    <Compile Include="Model\Interfaces\IRangeData.cs" />
+    <Compile Include="Model\RangeData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticFunctions\DateFunctions.cs" />
+    <Compile Include="StaticFunctions\ReadInteropExcel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Constants\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
